@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 5. Write Write a JavaScript program to add two number of addition, subtraction, multiplication, division (using simple function) -->
+    
+    <script>
+        let num1 = prompt("Enter the first number: ");
+        let num2 = prompt("Enter the second number: ");
+
+        function addition(a, b) {
+            return a + b;
+        }
+
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        function division(a, b) {
+            if (b !== 0) {
+                return a / b;
+            } else {
+                return "Cannot divide by zero";
+            }
+        }
+
+        let sum = addition(num1, num2);
+        let sub = subtraction(num1, num2);
+        let mul = multiplication(num1, num2);
+        let div = division(num1, num2);
+
+        document.write("Sum:", sum);
+        document.write("Difference:", sub);
+        document.write("Product:", mul);
+        document.write("Quotient:", div);
+    </script>
+    
+</body>
+</html>
