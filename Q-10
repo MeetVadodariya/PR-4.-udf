@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 10. Write a JavaScript program to decide if you are eligible for voting. (using arrow function with if-else statements) -->
+
+    <script>
+        let age = prompt("Enter your age: ");
+        
+        let voting = (age) => {
+            if (age >= 18) {
+                return "You are eligible for voting.";
+            } else {
+                return "You are not eligible for voting.";
+            }
+        }
+
+        document.write(voting(age));
+    </script>
+</body>
+</html>
