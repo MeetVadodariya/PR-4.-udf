@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+
+    <!-- 9. Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all functions) -->
+     
+    <script>
+        
+        let angle1 = parseFloat(prompt("Enter the first angle of the triangle:"));
+        let angle2 = parseFloat(prompt("Enter the second angle of the triangle:"));
+        let angle3 = parseFloat(prompt("Enter the third angle of the triangle:"));
+
+        let Triangle = (angle1, angle2, angle3) => 
+        {
+        let sum = angle1 + angle2 + angle3;
+        return sum === 180;
+        };
+
+        if (Triangle(angle1, angle2, angle3)) 
+        {
+          document.write("The triangle is valid.");
+        } else 
+        {
+          document.write("The triangle is not valid.");
+        }
+
+    </script>
+</body>
+</html>
